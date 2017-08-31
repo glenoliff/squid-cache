@@ -20,6 +20,8 @@ public class SCApplication extends Application {
     public void onCreate() {
         super.onCreate();
 
+//        Fresco.initialize(this);
+
         Proxy proxyTest = new Proxy(Proxy.Type.HTTP,new InetSocketAddress("192.168.0.121", 3128));
 
         OkHttpClient.Builder builder = new OkHttpClient.Builder().proxy(proxyTest);
