@@ -19,6 +19,10 @@ import butterknife.Unbinder;
 
 public class MainActivity extends AppCompatActivity implements ImageAdapter.ItemClickListener {
 
+    //
+    // Retrofit behind a proxy - https://stackoverflow.com/questions/32053413/using-retrofit-behind-a-proxy
+    //
+
     //region Instance Variables
 
     private static final int COLS = 3;
