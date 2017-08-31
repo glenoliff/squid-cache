@@ -10,7 +10,6 @@ import android.view.View;
 
 import com.example.glen.squidcache.R;
 import com.example.glen.squidcache.adapter.ImageAdapter;
-import com.facebook.drawee.view.SimpleDraweeView;
 
 import java.util.Arrays;
 
