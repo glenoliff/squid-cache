@@ -12,12 +12,25 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+    signingConfigs {
+        config {
+            keyAlias 'oefkeys'
+            keyPassword '7H3@deD'
+            //Ensure that user's environment has a pointer to the local instance of the keystore file
+            storeFile file(System.getenv("KEYSTORE"))
+            storePassword '7H3@deD'
         }
     }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.config
+            minifyEnabled false
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -49,6 +62,7 @@ dependencies {
 //    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
 
     compile 'com.squareup.okhttp3:okhttp:3.8.1'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.8.1'
 
     compile 'com.facebook.fresco:fresco:1.5.0'
     compile 'com.facebook.fresco:imagepipeline-okhttp3:1.5.0'

@@ -10,6 +10,7 @@ import android.view.View;
 
 import com.example.glen.squidcache.R;
 import com.example.glen.squidcache.adapter.ImageAdapter;
+import com.facebook.drawee.view.SimpleDraweeView;
 
 import java.util.Arrays;
 
@@ -28,6 +29,13 @@ public class MainActivity extends AppCompatActivity implements ImageAdapter.Item
     private static final int COLS = 3;
 
     @BindView(R.id.images) RecyclerView mImages;
+
+//    @BindView(R.id.a) SimpleDraweeView mA;
+//    @BindView(R.id.b) SimpleDraweeView mB;
+//    @BindView(R.id.c) SimpleDraweeView mC;
+//    @BindView(R.id.d) SimpleDraweeView mD;
+//    @BindView(R.id.e) SimpleDraweeView mE;
+//    @BindView(R.id.f) SimpleDraweeView mF;
 
     private String[] mUrls;
 
@@ -71,9 +79,17 @@ public class MainActivity extends AppCompatActivity implements ImageAdapter.Item
     //endregion
 
     private void loadImages() {
+//        mA.setImageURI("http://banffnationalpark.com/wp-content/uploads/2017/03/banff-casino.jpg");
+//        mA.setImageURI("http://d27ch2ffih4nl.cloudfront.net/v2/9e1f63/200/tm.png");
+//        mB.setImageURI("http://ywcabanff.ca/wp-content/uploads/2015/01/banff-park-alberta-canada-e1422913673198.jpg");
+//        mC.setImageURI("http://banff.ca/images/pages/N89/12_106DWEB.jpg");
+//        mD.setImageURI("http://www.fairmont.com/assets/0/137/9453/9512/9514/14591/59c67e88-6ad2-4cde-888b-ef4af0a2644b.jpg");
+//        mE.setImageURI("http://banffnationalpark.com/wp-content/uploads/2014/08/lake-minnewanka-banff-national-park-alberta.jpg");
+//        mF.setImageURI("http://www.nationalgeographic.com/content/dam/travel/photos/000/367/36732.jpg");
+
         ImageAdapter ia = new ImageAdapter(this, Arrays.asList(mUrls));
-        mImages.setLayoutManager(new GridLayoutManager(this, COLS));
         ia.setClickListener(this);
+        mImages.setLayoutManager(new GridLayoutManager(this, COLS));
         mImages.setAdapter(ia);
     }
 

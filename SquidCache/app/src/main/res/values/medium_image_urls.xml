@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="medium_urls">
+        <item>http://d27ch2ffih4nl.cloudfront.net/v2/9e1f63/200/tm.png</item>
         <item>http://banffnationalpark.com/wp-content/uploads/2017/03/banff-casino.jpg</item>
         <item>http://ywcabanff.ca/wp-content/uploads/2015/01/banff-park-alberta-canada-e1422913673198.jpg</item>
         <item>http://banff.ca/images/pages/N89/12_106DWEB.jpg</item>

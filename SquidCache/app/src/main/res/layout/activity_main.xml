@@ -8,6 +8,53 @@
     tools:context="com.example.glen.squidcache.activity.MainActivity"
     android:background="#000">
 
+    <!--<com.facebook.drawee.view.SimpleDraweeView-->
+        <!--android:id="@+id/a"-->
+        <!--android:layout_width="200dp"-->
+        <!--android:layout_height="200dp" />-->
+
+    <!--<ScrollView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<LinearLayout-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<com.facebook.drawee.view.SimpleDraweeView-->
+                <!--android:id="@+id/a"-->
+                <!--android:layout_width="200dp"-->
+                <!--android:layout_height="200dp"/>-->
+
+            <!--<com.facebook.drawee.view.SimpleDraweeView-->
+                <!--android:id="@+id/b"-->
+                <!--android:layout_width="200dp"-->
+                <!--android:layout_height="200dp"/>-->
+
+            <!--<com.facebook.drawee.view.SimpleDraweeView-->
+                <!--android:id="@+id/c"-->
+                <!--android:layout_width="200dp"-->
+                <!--android:layout_height="200dp"/>-->
+
+            <!--<com.facebook.drawee.view.SimpleDraweeView-->
+                <!--android:id="@+id/d"-->
+                <!--android:layout_width="200dp"-->
+                <!--android:layout_height="200dp"/>-->
+
+            <!--<com.facebook.drawee.view.SimpleDraweeView-->
+                <!--android:id="@+id/e"-->
+                <!--android:layout_width="200dp"-->
+                <!--android:layout_height="200dp"/>-->
+
+            <!--<com.facebook.drawee.view.SimpleDraweeView-->
+                <!--android:id="@+id/f"-->
+                <!--android:layout_width="200dp"-->
+                <!--android:layout_height="200dp"/>-->
+
+        <!--</LinearLayout>-->
+    <!--</ScrollView>-->
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/images"
         android:layout_width="match_parent"
